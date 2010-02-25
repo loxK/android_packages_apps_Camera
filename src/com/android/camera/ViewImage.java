@@ -48,10 +48,10 @@ import com.android.camera.gallery.VideoObject;
 
 import java.util.Random;
 
-import org.openeclair.android.input.MultiTouchController;
-import org.openeclair.android.input.MultiTouchController.MultiTouchObjectCanvas;
-import org.openeclair.android.input.MultiTouchController.PointInfo;
-import org.openeclair.android.input.MultiTouchController.PositionAndScale;
+import org.cyanogenmod.android.input.MultiTouchController;
+import org.cyanogenmod.android.input.MultiTouchController.MultiTouchObjectCanvas;
+import org.cyanogenmod.android.input.MultiTouchController.PointInfo;
+import org.cyanogenmod.android.input.MultiTouchController.PositionAndScale;
 
 // This activity can display a whole picture and navigate them in a specific
 // gallery. It has two modes: normal mode and slide show mode. In normal mode
