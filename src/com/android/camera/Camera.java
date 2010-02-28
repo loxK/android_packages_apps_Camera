@@ -68,6 +68,7 @@ import android.view.WindowManager;
 import android.view.MenuItem.OnMenuItemClickListener;
 import android.widget.ImageView;
 import android.widget.ZoomButtonsController;
+import android.graphics.PixelFormat;
 
 import com.android.camera.gallery.IImage;
 import com.android.camera.gallery.IImageList;
@@ -842,7 +843,11 @@ public class Camera extends Activity implements View.OnClickListener,
                     loc = null;
                 }
             }
+            
+            mParameters.setPictureFormat( PixelFormat.JPEG);
+            mParameters.setPictureSize( 2560,1920);
 
+            
             mCameraDevice.setParameters(mParameters);
 
             mCameraDevice.takePicture(mShutterCallback, mRawPictureCallback,
